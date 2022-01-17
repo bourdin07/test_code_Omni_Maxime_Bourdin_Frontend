@@ -7,7 +7,8 @@ The project uses React 17.0.2 and written in TypeScript 4.5.4.
 - Every field present in the Form are mandatory, if the field doesn't meet requirement an error message is displayed.
 - The extra fields are displayed according the country, and managed with useState(true) or useState(false)
   - for instance if the country selected is "BR" for Brazil
-  - I update the state `isShownExtraFieldWorkingHours` with `setIsShownExtraFieldWorkingHours(true)` otherwise `setIsShownExtraFieldWorkingHours(false)`
+  - I update the state `isShownExtraFieldWorkingHours` with `setIsShownExtraFieldWorkingHours(true)` to display the field, otherwise `setIsShownExtraFieldWorkingHours(false)`
+  - And make the field required with `setFieldRequiredWorkingHours(Yup.number().required("Please type the number of working hours"))` otherwise `setFieldRequiredWorkingHours(Yup.number())` as a simple field not required
 - To check the number of Holiday Allowance, I implemented inside onChange.
 
 If the form is valid, I displayed the values of the Form in the console.
