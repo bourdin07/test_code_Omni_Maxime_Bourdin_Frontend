@@ -10,4 +10,4 @@ To check the number of Holiday Allowance, I implemented inside onChange.
 
 If the form is valid, I displayed the values of the Form in the console.
 
-I didn't had time to make a lot of test
+I didn't have time to make a lot of test
