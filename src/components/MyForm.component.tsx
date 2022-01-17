@@ -81,7 +81,7 @@ const MyForm = ({ }) => {
                 as="select"
                 onChange={(e: any) => {
                   let value: string = e.target.value;
-                  console.log(e.target.value);
+                  // console.log(e.target.value);
 
                   if (value === "SP" || value === "GH") {
                     setIsShownExtraFieldMaritalStatus(true);
