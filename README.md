@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Info
 
+The project use React and use TypeScript.
+
 - To build the form I used "Formik", because it's very easy to check inputs dans validates data with "Yup".
 - Every field present in the Form are mandatory, if the field doesn't meet requirement an error message is displayed.
 - The extra fields are displayed according the country, and managed with useState(true) or useState(false)
@@ -14,3 +16,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 If the form is valid, I displayed the values of the Form in the console.
 
 I didn't have time to make a lot of test
+
+## NPM packages used
+
+- Formik
+- Yup
+- Bootstrap
+- Bootstrap for React
