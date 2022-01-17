@@ -1,6 +1,6 @@
 ## Info
 
-The project use React and use TypeScript.
+The project uses React 17.0.2 and written in TypeScript 4.5.4.
 `npx create-react-app frontend --template typescript`
 
 - To build the form I used "Formik", and validates data with "Yup".
@@ -16,7 +16,7 @@ I didn't have time to make a lot of test
 
 ## NPM packages used
 
-- Formik
-- Yup
-- Bootstrap
-- Bootstrap for React
+- Formik `^2.2.9`
+- Yup `^0.32.11`
+- Bootstrap `^5.1.3` 
+- Bootstrap for React `^2.1.1`
