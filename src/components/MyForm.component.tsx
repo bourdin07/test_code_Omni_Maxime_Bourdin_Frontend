@@ -83,6 +83,17 @@ const MyForm = ({ }) => {
                   let value: string = e.target.value;
                   // console.log(e.target.value);
 
+                  setMinimumAllowance(0);
+                  setMaximumAllowance(99999);
+
+                  if (value === "SP") {
+                    setMinimumAllowance(30);
+                  }
+
+                  if (value === "BR") {
+                    setMaximumAllowance(40);
+                  }
+
                   if (value === "SP" || value === "GH") {
                     setIsShownExtraFieldMaritalStatus(true);
                     setFieldRequiredMaritalStatus(Yup.string().required("Please select marital status"))
@@ -205,20 +216,9 @@ const MyForm = ({ }) => {
                   min={0}
                   max={maximumAllowance}
                   type="number"
-                  onChange={(e: any) => {
-                    let value: string = e.target.value;
+                  onChange={async (e: any) => {
+                    let value: string = await e.target.value;
                     // console.log(e.target.value);
-
-                    if (values.countryOfWork === "SP") {
-                      if (parseInt(value) < 30) {
-                        setMinimumAllowance(30);
-                      }
-                      else setMinimumAllowance(0);
-                    } else if (values.countryOfWork === "BR") {
-                      if (parseInt(value) > 40)
-                        setMaximumAllowance(40);
-                      else setMaximumAllowance(9999999999);
-                    }
 
                     setFieldValue("holidayAllowance", value);
                     setFieldTouched("holidayAllowance", true, true);
