@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project use React and use TypeScript.
 
-- To build the form I used "Formik", because it's very easy to check inputs dans validates data with "Yup".
+- To build the form I used "Formik", dans validates data with "Yup".
 - Every field present in the Form are mandatory, if the field doesn't meet requirement an error message is displayed.
 - The extra fields are displayed according the country, and managed with useState(true) or useState(false)
   - for instance if the country selected is "BR" for Brazil
