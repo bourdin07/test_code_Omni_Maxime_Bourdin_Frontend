@@ -7,7 +7,7 @@ const MyForm = ({ }) => {
   const [isShownExtraFieldMaritalStatus, setIsShownExtraFieldMaritalStatus] = useState(false);
   const [isShownExtraFieldSocialInsuranceNumber, setIsShownExtraFieldSocialInsuranceNumber] = useState(false);
   const [isShownExtraFieldNumberChildren, setIsShownExtraFieldNumberChildren] = useState(false);
-  const [isShownExtraFieldWorkingHours, setIsShownExtraFieldWorkingHours] = useState(false);
+  const [isShownExtraFieldWorkingHours, setIsShownExtraFieldWorkingHours] = useState(true);
 
   const [minimumAllowance, setMinimumAllowance] = useState(0);
   const [maximumAllowance, setMaximumAllowance] = useState(99999999);
