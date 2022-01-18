@@ -10,7 +10,7 @@ const MyForm = ({ }) => {
   const [isShownExtraFieldWorkingHours, setIsShownExtraFieldWorkingHours] = useState(true);
 
   const [minimumAllowance, setMinimumAllowance] = useState(0);
-  const [maximumAllowance, setMaximumAllowance] = useState(99999999);
+  const [maximumAllowance, setMaximumAllowance] = useState(40);
 
   const [fieldRequiredMaritalStatus, setFieldRequiredMaritalStatus] = useState(Yup.string());
   const [fieldRequiredSocialInsuranceNumber, setFieldRequiredSocialInsuranceNumber] = useState(Yup.string());
