@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { services } from './services/services';
+
+export const service = new services();
 
 ReactDOM.render(
   <React.StrictMode>

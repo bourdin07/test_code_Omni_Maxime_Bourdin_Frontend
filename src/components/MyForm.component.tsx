@@ -2,6 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Col, Row, Button, Form as FormBS } from "react-bootstrap";
 import { FormEvent, MouseEventHandler, useEffect, useState } from "react";
+import { service } from "..";
 
 const MyForm = ({ }) => {
   const [isShownExtraFieldMaritalStatus, setIsShownExtraFieldMaritalStatus] = useState(false);
@@ -66,8 +67,8 @@ const MyForm = ({ }) => {
 
       // Submitting
       onSubmit={async (values, actions) => {
-        // Console log the values
-        console.log(values);
+        // Send the data through the service
+        service.people.postPeople(values);
       }}
     >
       {({ errors, touched, values, handleSubmit, handleChange, setFieldValue, setTouched, setFieldTouched, validateForm }) => (
